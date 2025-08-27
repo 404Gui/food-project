@@ -2,8 +2,8 @@
 import Link from "next/link";
 import logoImg from "@/assets/logo.png";
 import styles from "./MainHeader.module.css";
-import BackgroundMainHeader from "./BackGroundMainHeader";
 import { NavLink } from "./NavLink/NavLink";
+import BackgroundMainHeader from "./BackgroundMainHeader";
 
 export function MainHeader() {
   return (
