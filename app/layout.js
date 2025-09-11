@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Projeto Integrador",
-  description: "Refeições compartilhadas por uma comunidade apaixonada por comida.",
+  description: "Protótipo projeto integrador.",
 };
 
 export default function RootLayout({ children }) {
@@ -11,7 +11,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <MainHeader />
-
         {children}
       </body>
     </html>

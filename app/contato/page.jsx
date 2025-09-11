@@ -7,7 +7,7 @@ export default function ShareMealPage() {
         <h1>
           Entre em contato e<span className={classes.highlight}> faça seu pedido!</span>
         </h1>
-        <p>Ou qualquer outra refeição que você sinta que precisa ser compartilhada!</p>
+        <p>Ou qualquer outra coisa que deseja compartilhar!</p>
       </header>
       <main className={classes.main}>
         <form className={classes.form}>
