@@ -10,30 +10,30 @@ export default function CommunityPage() {
     <>
       <header className={classes.header}>
         <h1>
-          Uma paixão em comum: <span className={classes.highlight}>Comida</span>
+          Conheça o nosso <span className={classes.highlight}>prato especial!</span>
         </h1>
         <p>
-          Junte-se à nossa comunidade e compartilhe suas receitas favoritas!
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry
         </p>
       </header>
       <main className={classes.main}>
-        <h2>Vantagens da Comunidade</h2>
+        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
 
         <ul className={classes.perks}>
           <li>
             <Image src={mealIcon} alt="Uma refeição deliciosa" />
-            <p>Compartilhe e descubra novas receitas</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
           </li>
           <li>
             <Image src={communityIcon} alt="Um grupo de pessoas cozinhando" />
-            <p>Encontre novos amigos e pessoas com os mesmos interesses</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
           </li>
           <li>
             <Image
               src={eventsIcon}
               alt="Um grupo de pessoas em um evento culinário"
             />
-            <p>Participe de eventos exclusivos</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
           </li>
         </ul>
       </main>

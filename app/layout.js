@@ -2,7 +2,7 @@ import { MainHeader } from "@/components/main-header/MainHeader";
 import "./globals.css";
 
 export const metadata = {
-  title: "Food Projeto",
+  title: "Projeto Integrador",
   description: "Refeições compartilhadas por uma comunidade apaixonada por comida.",
 };
 
