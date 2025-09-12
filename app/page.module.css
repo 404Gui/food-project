@@ -30,9 +30,9 @@
 }
 
 .cta {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .cta a {

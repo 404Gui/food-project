@@ -5,19 +5,20 @@ import ImageSlideshow from "@/components/ImageSlideShow/ImageSlideShow";
 export default function Home() {
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.slideshow}>
-          <ImageSlideshow />
-        </div>
+      <header className={styles.header}>        
         <div>
           <div className={styles.hero}>
             <h1>Nome do produto</h1>
-            <p>Experimente e compartilhe nosso produto com todos.</p>
+            <p>{`Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.`}</p>
           </div>
           <div className={styles.cta}>
-            <Link href="/nosso-prato">Ver detalhes</Link>
+            <Link href="/nosso-prato">Ver cardapio</Link>
             <Link href="/contato">Faça seu pedido</Link>
           </div>
+        </div>
+        <div className={styles.slideshow}>
+          <ImageSlideshow />
         </div>
       </header>
       <main>

@@ -6,7 +6,7 @@ import { NavLink } from "../NavLink/NavLink";
 
 export const BotaoMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  
+
   return (
     <div>
       <button
@@ -19,11 +19,14 @@ export const BotaoMenu = () => {
 
       <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
         <ul>
-          <li>
+          <li onClick={() => setMenuOpen(!menuOpen)}>
             <NavLink href="/sobre">Sobre nós</NavLink>
           </li>
-          <li>
+          <li onClick={() => setMenuOpen(!menuOpen)}>
             <NavLink href="/contato">Contato</NavLink>
+          </li>
+          <li onClick={() => setMenuOpen(!menuOpen)}>
+            <NavLink href="/avaliacoes">Avaliações</NavLink>
           </li>
         </ul>
       </nav>
