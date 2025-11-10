@@ -8,9 +8,8 @@ export default function Home() {
       <header className={styles.header}>        
         <div>
           <div className={styles.hero}>
-            <h1>Nome do produto</h1>
-            <p>{`Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.`}</p>
+            <h1>Pastelinho</h1>
+            <p>{`Doce típico do estado do Goiás, também conhecido como pastelim`}</p>
           </div>
           <div className={styles.cta}>
             <Link href="/nosso-prato">Ver cardapio</Link>

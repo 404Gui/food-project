@@ -13,11 +13,12 @@
 }
 
 .highlight {
-  background: linear-gradient(90deg, #f9572a, #ff8a05);
+  background: linear-gradient(90deg, #8b1111, #b12222, #d13a3a);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 .main {
   width: 90%;

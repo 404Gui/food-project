@@ -12,15 +12,15 @@ export default function BackgroundMainHeader() {
           <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop
               offset="0%"
-              style={{ stopColor: "#d62828", stopOpacity: "1" }}
+              style={{ stopColor: "#5e0b0b", stopOpacity: "1" }} // vinho escuro
             />
             <stop
               offset="50%"
-              style={{ stopColor: "#f9c74f", stopOpacity: "1" }}
+              style={{ stopColor: "#8b1111", stopOpacity: "1" }} // vermelho intenso
             />
             <stop
               offset="100%"
-              style={{ stopColor: "#2a9d8f", stopOpacity: "1" }}
+              style={{ stopColor: "#b12222", stopOpacity: "1" }} // vermelho médio quente
             />
           </linearGradient>
         </defs>

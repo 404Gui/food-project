@@ -13,8 +13,7 @@ export function MainHeader() {
       <BackgroundMainHeader />
       <header className={styles.header}>
         <Link className={styles.logo} href="/">
-          <img src={logoImg.src} alt="Um prato de comida" />
-          <p>Projeto Integrador</p>
+          <img src={logoImg.src} alt="Logo Magia Goiania" />
         </Link>
         <BotaoMenu />
       </header>

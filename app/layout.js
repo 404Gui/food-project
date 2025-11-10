@@ -2,8 +2,8 @@ import { MainHeader } from "@/components/main-header/MainHeader";
 import "./globals.css";
 
 export const metadata = {
-  title: "Projeto Integrador",
-  description: "Protótipo projeto integrador.",
+  title: "Magia Goiânia - Doceria",
+  description: "Descubra o sabor da magia! A Magia Goiânia é uma doceria artesanal que transforma ingredientes em momentos doces e inesquecíveis.",
 };
 
 export default function RootLayout({ children }) {
