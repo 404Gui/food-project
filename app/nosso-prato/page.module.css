@@ -60,9 +60,6 @@
   color: #ddd6cb;
 }
 
-
-
-
 .header {
   gap: 3rem;
   margin: 3rem auto 5rem auto;
@@ -87,7 +84,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* --- Corpo --- */
 .main {
   width: 90%;
   max-width: 75rem;
@@ -118,10 +114,18 @@
 
 .product img {
   width: 100%;
-  height: 16rem;
+  height: 20rem;
   object-fit: cover;
-  border-radius: 0.75rem;
+  object-position: center 45%;
+  border-radius: 0.9rem;
   margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px rgba(139, 17, 17, 0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 30px rgba(177, 34, 34, 0.45);
 }
 
 .product h2 {
@@ -136,7 +140,6 @@
   color: #e8e3da;
 }
 
-/* --- Detalhes --- */
 .details {
   margin-top: 4rem;
   color: #ddd6cb;
@@ -162,7 +165,6 @@
   margin: 0.3rem 0;
 }
 
-/* --- Galeria Final --- */
 .gallery {
   margin-top: 5rem;
   display: grid;
@@ -183,7 +185,6 @@
   box-shadow: 0 0 25px rgba(139, 17, 17, 0.5);
 }
 
-/* --- Responsivo --- */
 @media (max-width: 768px) {
   .header h1 {
     font-size: 2rem;

@@ -3,9 +3,9 @@ import classes from "./page.module.css";
 
 import food4 from "@/assets/food4.jpeg";
 import food5 from "@/assets/food5.jpeg";
-import goiaba from "@/assets/goiaba.jpeg";
+import goiaba from "@/assets/food3.jpeg";
 import food7 from "@/assets/food7.jpeg";
-import pacoca from "@/assets/pacoca.jpeg";
+import pacoca from "@/assets/food1.jpeg";
 
 export default function CardapioPage() {
   return (

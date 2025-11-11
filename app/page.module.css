@@ -78,8 +78,33 @@
   text-align: center;
 }
 
+.section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #b12222;
+  margin-bottom: 1.2rem;
+}
+
+.section p {
+  line-height: 1.8;
+  margin-bottom: 1.4rem;
+  color: #ddd6cb;
+}
+
+.section em {
+  font-style: italic;
+  color: #e2bdbd;
+}
+
+.section strong {
+  color: #e6d3c7;
+}
+
+
+
 @media (max-width: 782px) {
   .header {
     flex-wrap: wrap;
   }
 }
+
