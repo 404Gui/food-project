@@ -20,13 +20,13 @@ export const BotaoMenu = () => {
       <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
         <ul>
           <li onClick={() => setMenuOpen(!menuOpen)}>
+            <NavLink href="/">Inicio</NavLink>
+          </li>
+          <li onClick={() => setMenuOpen(!menuOpen)}>
             <NavLink href="/sobre">Sobre nós</NavLink>
           </li>
           <li onClick={() => setMenuOpen(!menuOpen)}>
             <NavLink href="/contato">Contato</NavLink>
-          </li>
-          <li onClick={() => setMenuOpen(!menuOpen)}>
-            <NavLink href="/avaliacoes">Avaliações</NavLink>
           </li>
         </ul>
       </nav>

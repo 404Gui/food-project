@@ -1,41 +1,74 @@
 import Image from "next/image";
-
-import mealIcon from "@/assets/icons/meal.png";
-import communityIcon from "@/assets/icons/community.png";
-import eventsIcon from "@/assets/icons/events.png";
 import classes from "./page.module.css";
 
-export default function CommunityPage() {
+import food4 from "@/assets/food4.jpeg";
+import food5 from "@/assets/food5.jpeg";
+import goiaba from "@/assets/goiaba.jpeg";
+import food7 from "@/assets/food7.jpeg";
+import pacoca from "@/assets/pacoca.jpeg";
+
+export default function CardapioPage() {
   return (
     <>
       <header className={classes.header}>
         <h1>
-          Conheça o nosso <span className={classes.highlight}>prato especial!</span>
+          Os Sabores da Nossa <span className={classes.highlight}>Magia</span>
         </h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          Tudo começa com o segredo da nossa massa artesanal — textura
+          incrivelmente sequinha, que se desfaz na boca. Ela é preparada com
+          ingredientes selecionados, servindo como a tela perfeita para as
+          nossas duas criações.
         </p>
       </header>
-      <main className={classes.main}>
-        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
 
-        <ul className={classes.perks}>
-          <li>
-            <Image src={mealIcon} alt="Uma refeição deliciosa" />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          </li>
-          <li>
-            <Image src={communityIcon} alt="Um grupo de pessoas cozinhando" />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          </li>
-          <li>
-            <Image
-              src={eventsIcon}
-              alt="Um grupo de pessoas em um evento culinário"
-            />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          </li>
-        </ul>
+      <main className={classes.main}>
+        <section className={classes.products}>
+          <div className={classes.product}>
+            <Image src={goiaba} alt="Magia Clássica - Goiabada" />
+            <h2>Magia Clássica (Goiabada)</h2>
+            <p>
+              A tradição que define o Brasil. Aqui, resgatamos a alma da
+              goiabada e a transformamos em um creme de textura sublime, que
+              explode em sabor. É a memória afetiva do sabor intenso da fruta,
+              perfeitamente equilibrada pela leveza da nossa massa crocante
+            </p>
+          </div>
+
+          <div className={classes.product}>
+            <Image src={pacoca} alt="Magia Aveludada - Paçoca" />
+            <h2>Magia Aveludada (Paçoca)</h2>
+            <p>
+              Uma homenagem ao amendoim. Elevamos a paçoca a uma textura de
+              veludo, um recheio incrivelmente cremoso que envolve o paladar. É
+              o sabor reconfortante que derrete na boca, criando uma experiência
+              de conforto e surpresa em contraste com a massa delicada.
+            </p>
+          </div>
+        </section>
+
+        <section className={classes.details}>
+          <h3>O Cuidado em Cada Detalhe</h3>
+          <p>
+            Sua experiência é o toque final da nossa magia. Cada pastelinho é
+            cuidadosamente acomodado em uma embalagem especial, desenhada para
+            proteger o sabor e transmitir nosso carinho em cada detalhe.
+          </p>
+          <p>Conteúdo: Cada embalagem contém 2 (duas) unidades.</p>
+
+          <h4>Peça como preferir:</h4>
+          <ul>
+            <li>2 unidades de Magia Clássica (Goiabada)</li>
+            <li>2 unidades de Magia Aveludada (Paçoca)</li>
+            <li>1 unidade de cada (Mix)</li>
+          </ul>
+        </section>
+
+        <section className={classes.gallery}>
+          <Image src={food4} alt="Pastelinho artesanal 1" />
+          <Image src={goiaba} alt="Pastelinho artesanal 2" />
+          <Image src={food7} alt="Pastelinho artesanal 3" />
+        </section>
       </main>
     </>
   );

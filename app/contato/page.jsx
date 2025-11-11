@@ -16,15 +16,9 @@ export default function ShareMealPage() {
               <label htmlFor="name">Seu nome</label>
               <input type="text" id="name" name="name" required />
             </p>
-            <p>
-              <label htmlFor="email">Seu email</label>
-              <input type="email" id="email" name="email" required />
-            </p>
+            
           </div>
-          <p>
-            <label htmlFor="title">Titulo</label>
-            <input type="text" id="title" name="title" required />
-          </p>
+          
           <p>
             <label htmlFor="instructions">Instruções</label>
             <textarea

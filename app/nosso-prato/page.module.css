@@ -59,3 +59,145 @@
   margin: 0;
   color: #ddd6cb;
 }
+
+
+
+
+.header {
+  gap: 3rem;
+  margin: 3rem auto 5rem auto;
+  width: 90%;
+  max-width: 75rem;
+  color: #ddd6cb;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #5e0b0b, #8b1111, #b12222, #d13a3a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Corpo --- */
+.main {
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto 5rem auto;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.product {
+  flex: 1 1 340px;
+  background-color: rgba(20, 10, 10, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 20px rgba(139, 17, 17, 0.4);
+}
+
+.product img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.product h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #ddd6cb;
+  margin-bottom: 1rem;
+}
+
+.product p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e8e3da;
+}
+
+/* --- Detalhes --- */
+.details {
+  margin-top: 4rem;
+  color: #ddd6cb;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.details h3,
+.details h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #b12222;
+  margin-top: 2.5rem;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.details li {
+  margin: 0.3rem 0;
+}
+
+/* --- Galeria Final --- */
+.gallery {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  transition: transform 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(139, 17, 17, 0.5);
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .product img {
+    height: 12rem;
+  }
+
+  .gallery img {
+    height: 11rem;
+  }
+
+  .details {
+    font-size: 1rem;
+  }
+}
