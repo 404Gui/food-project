@@ -3,7 +3,7 @@ import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import classes from "./page.module.css";
 
-const WHATSAPP_NUMBER = "5511942109948";
+const WHATSAPP_NUMBER = "5518997223305";
 
 export default function ShareMealPage() {
   const searchParams = useSearchParams();

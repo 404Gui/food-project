@@ -108,3 +108,24 @@
   }
 }
 
+
+.orderButton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #8b1111, #b12222, #d13a3a);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.orderButton:hover,
+.orderButton:focus {
+  background: linear-gradient(90deg, #5e0b0b, #8b1111, #b12222);
+  transform: translateY(-2px);
+}

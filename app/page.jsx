@@ -1,8 +1,17 @@
+"use client";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import styles from "./page.module.css";
 import ImageSlideshow from "@/components/ImageSlideShow/ImageSlideShow";
 
 export default function Home() {
+  const router = useRouter();
+
+  function handleOrderClick() {
+    const message = "Olá! Gostaria de fazer um pedido de pastelinho.";
+    router.push(`/contato?mensagem=${encodeURIComponent(message)}`);
+  }
+
   return (
     <>
       <header className={styles.header}>
@@ -16,7 +25,12 @@ export default function Home() {
           </div>
           <div className={styles.cta}>
             <Link href="/nosso-prato">Ver cardápio</Link>
-            <Link href="/contato">Faça seu pedido</Link>
+            <button
+              onClick={handleOrderClick}
+              className={styles.orderButton}
+            >
+              Faça seu pedido
+            </button>
           </div>
         </div>
 
@@ -26,7 +40,6 @@ export default function Home() {
       </header>
 
       <main>
-        {/* História */}
         <section className={styles.section}>
           <h2>O Sabor que Guarda a Alma de Goiás</h2>
           <p>
@@ -49,7 +62,7 @@ export default function Home() {
             desfaz para revelar um recheio cremoso que derrete na boca.
           </p>
           <p>
-            E aqui, demos o nosso toque especia: saímos do óbvio e criamos{" "}
+            E aqui, demos o nosso toque especial: saímos do óbvio e criamos{" "}
             <strong>duas experiências únicas</strong>: o aveludado{" "}
             <em>creme de paçoca</em> e o clássico <em>creme de goiabada</em>.
           </p>
@@ -60,7 +73,6 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Destaque */}
         <section className={styles.section}>
           <h2>Por que escolher nosso produto?</h2>
           <p>

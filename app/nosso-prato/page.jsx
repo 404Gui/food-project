@@ -12,7 +12,7 @@ export default function CardapioPage() {
   const router = useRouter();
 
   function handleOrder(flavor) {
-    const message = `Olá! Gostaria de fazer um pedido do pastelinho sabor ${flavor}.`;
+    const message = `Gostaria de fazer um pedido do pastelinho sabor ${flavor}.`;
     router.push(`/contato?mensagem=${encodeURIComponent(message)}`);
   }
 
