@@ -1,13 +1,21 @@
+"use client";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import classes from "./page.module.css";
 
 import food4 from "@/assets/food4.jpeg";
-import food5 from "@/assets/food5.jpeg";
 import goiaba from "@/assets/food3.jpeg";
 import food7 from "@/assets/food7.jpeg";
 import pacoca from "@/assets/food1.jpeg";
 
 export default function CardapioPage() {
+  const router = useRouter();
+
+  function handleOrder(flavor) {
+    const message = `Olá! Gostaria de fazer um pedido do pastelinho sabor ${flavor}.`;
+    router.push(`/contato?mensagem=${encodeURIComponent(message)}`);
+  }
+
   return (
     <>
       <header className={classes.header}>
@@ -15,7 +23,7 @@ export default function CardapioPage() {
           Os Sabores da Nossa <span className={classes.highlight}>Magia</span>
         </h1>
         <p>
-          Tudo começa com o segredo da nossa massa artesanal — textura
+          Tudo começa com o segredo da nossa massa artesanal, textura
           incrivelmente sequinha, que se desfaz na boca. Ela é preparada com
           ingredientes selecionados, servindo como a tela perfeita para as
           nossas duas criações.
@@ -24,25 +32,30 @@ export default function CardapioPage() {
 
       <main className={classes.main}>
         <section className={classes.products}>
-          <div className={classes.product}>
+          <div
+            className={classes.product}
+            onClick={() => handleOrder("Goiabada")}
+            style={{ cursor: "pointer" }}
+          >
             <Image src={goiaba} alt="Magia Clássica - Goiabada" />
             <h2>Magia Clássica (Goiabada)</h2>
             <p>
               A tradição que define o Brasil. Aqui, resgatamos a alma da
               goiabada e a transformamos em um creme de textura sublime, que
-              explode em sabor. É a memória afetiva do sabor intenso da fruta,
-              perfeitamente equilibrada pela leveza da nossa massa crocante
+              explode em sabor.
             </p>
           </div>
 
-          <div className={classes.product}>
+          <div
+            className={classes.product}
+            onClick={() => handleOrder("Paçoca")}
+            style={{ cursor: "pointer" }}
+          >
             <Image src={pacoca} alt="Magia Aveludada - Paçoca" />
             <h2>Magia Aveludada (Paçoca)</h2>
             <p>
               Uma homenagem ao amendoim. Elevamos a paçoca a uma textura de
-              veludo, um recheio incrivelmente cremoso que envolve o paladar. É
-              o sabor reconfortante que derrete na boca, criando uma experiência
-              de conforto e surpresa em contraste com a massa delicada.
+              veludo, um recheio incrivelmente cremoso que envolve o paladar.
             </p>
           </div>
         </section>

@@ -10,7 +10,7 @@ export default function Home() {
           <div className={styles.hero}>
             <h1>Pastelinho</h1>
             <p>
-              Doce típico do estado de Goiás — também conhecido como{" "}
+              Doce típico do estado de Goiás, também conhecido como{" "}
               <em>pastelim</em>.
             </p>
           </div>

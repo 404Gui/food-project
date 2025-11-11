@@ -1,30 +1,31 @@
 "use client";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import classes from "./page.module.css";
 
-const WHATSAPP_NUMBER = "5518997223305"; // 18997223305 Sara
+const WHATSAPP_NUMBER = "5511942109948";
 
 export default function ShareMealPage() {
+  const searchParams = useSearchParams();
+  const [instructions, setInstructions] = useState("");
+
+  useEffect(() => {
+    const mensagem = searchParams.get("mensagem");
+    if (mensagem) setInstructions(mensagem);
+  }, [searchParams]);
+
   function handleSubmit(e) {
     e.preventDefault();
     const form = e.currentTarget;
     const name = form.name.value.trim();
-    const instructions = form.instructions.value.trim();
 
     if (!name || !instructions) {
       alert("Por favor, preencha todos os campos.");
       return;
     }
 
-    const message = `Olá, sou ${name}!
-Quero fazer um pedido.
-
-Instruções:
-${instructions}`;
-
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-      message
-    )}`;
-
+    const message = `Olá, sou ${name}!\n${instructions}`;
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank", "noopener,noreferrer");
   }
 
@@ -42,17 +43,24 @@ ${instructions}`;
           <div className={classes.row}>
             <p>
               <label htmlFor="name">Seu nome</label>
-              <input type="text" id="name" name="name" required autoComplete="name" />
+              <input type="text" id="name" name="name" required />
             </p>
           </div>
 
           <p>
             <label htmlFor="instructions">Instruções</label>
-            <textarea id="instructions" name="instructions" rows="10" required />
+            <textarea
+              id="instructions"
+              name="instructions"
+              rows="10"
+              value={instructions}
+              onChange={(e) => setInstructions(e.target.value)}
+              required
+            ></textarea>
           </p>
 
           <p className={classes.actions}>
-            <button type="submit">Enviar</button>
+            <button type="submit">Pedir</button>
           </p>
         </form>
       </main>
