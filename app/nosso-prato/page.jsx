@@ -39,12 +39,20 @@ export default function CardapioPage() {
             style={{ cursor: "pointer" }}
           >
             <Image src={goiaba} alt="Magia Clássica - Goiabada" />
+
             <h2>Magia Clássica (Goiabada)</h2>
             <p>
               A tradição que define o Brasil. Aqui, resgatamos a alma da
               goiabada e a transformamos em um creme de textura sublime, que
               explode em sabor.
             </p>
+
+            <div className={classes.bottomArea}>
+              <span className={classes.price}>
+                R$ 11 pré-venda • R$ 12 no dia
+              </span>
+              <span className={classes.orderTag}>Pedir agora →</span>
+            </div>
           </div>
 
           <div
@@ -53,11 +61,19 @@ export default function CardapioPage() {
             style={{ cursor: "pointer" }}
           >
             <Image src={pacoca} alt="Magia Aveludada - Paçoca" />
+
             <h2>Magia Aveludada (Paçoca)</h2>
             <p>
               Uma homenagem ao amendoim. Elevamos a paçoca a uma textura de
               veludo, um recheio incrivelmente cremoso que envolve o paladar.
             </p>
+
+            <div className={classes.bottomArea}>
+              <span className={classes.price}>
+                R$ 11 pré-venda • R$ 12 no dia
+              </span>
+              <span className={classes.orderTag}>Pedir agora →</span>
+            </div>
           </div>
         </section>
 
@@ -68,7 +84,17 @@ export default function CardapioPage() {
             cuidadosamente acomodado em uma embalagem especial, desenhada para
             proteger o sabor e transmitir nosso carinho em cada detalhe.
           </p>
-          <p>Conteúdo: Cada embalagem contém 2 (duas) unidades.</p>
+
+          <p>
+            <strong>Preço:</strong> R$ 11 na pré-venda • R$ 12 no dia do evento.
+          </p>
+          <p>
+            <strong>Conteúdo:</strong> cada bandeijinha contém 2 pastelinhos.
+          </p>
+          <p>
+            <strong>Retirada:</strong> feita presencialmente na UNESP —
+            Faculdade de Ciências e Letras de Assis.
+          </p>
 
           <h4>Peça como preferir:</h4>
           <ul>

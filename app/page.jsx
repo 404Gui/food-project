@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import styles from "./page.module.css";
 import ImageSlideshow from "@/components/ImageSlideShow/ImageSlideShow";
+import MapaGoogle from "@/components/GoogleMap/Google";
 
 export default function Home() {
   const router = useRouter();
@@ -25,10 +26,7 @@ export default function Home() {
           </div>
           <div className={styles.cta}>
             <Link href="/nosso-prato">Ver cardápio</Link>
-            <button
-              onClick={handleOrderClick}
-              className={styles.orderButton}
-            >
+            <button onClick={handleOrderClick} className={styles.orderButton}>
               Faça seu pedido
             </button>
           </div>
@@ -87,10 +85,14 @@ export default function Home() {
             <em>goiabada</em>.
           </p>
           <p>
-            É o sabor clássico com a qualidade e higiene que você busca e merece,
-            feito para criar um <em>“momento mágico”</em> inesquecível a cada
-            mordida.
+            É o sabor clássico com a qualidade e higiene que você busca e
+            merece, feito para criar um <em>“momento mágico”</em> inesquecível a
+            cada mordida.
           </p>
+        </section>
+        <section className={styles.section}>
+          <h2>Onde Estamos</h2>
+          <MapaGoogle />
         </section>
       </main>
     </>
