@@ -4,6 +4,7 @@ import Image from "next/image";
 import classes from "./page.module.css";
 
 import food4 from "@/assets/food4.jpeg";
+import food2 from "@/assets/food2.jpeg";
 import goiaba from "@/assets/food3.jpeg";
 import food7 from "@/assets/food7.jpeg";
 import pacoca from "@/assets/food1.jpeg";
@@ -80,7 +81,7 @@ export default function CardapioPage() {
         <section className={classes.gallery}>
           <Image src={food4} alt="Pastelinho artesanal 1" />
           <Image src={goiaba} alt="Pastelinho artesanal 2" />
-          <Image src={food7} alt="Pastelinho artesanal 3" />
+          <Image src={food2} alt="Pastelinho artesanal 3" />
         </section>
       </main>
     </>

@@ -8,7 +8,7 @@ export default function Home() {
   const router = useRouter();
 
   function handleOrderClick() {
-    const message = "Olá! Gostaria de fazer um pedido de pastelinho.";
+    const message = "Gostaria de fazer um pedido de pastelinho.";
     router.push(`/contato?mensagem=${encodeURIComponent(message)}`);
   }
 
